@@ -22,7 +22,6 @@ function HomePage() {
     const [loadedMeetups, setLoadedMeetups] = useState([]);
 
     useEffect(() => {
-        // send an http request and fetch data
         setLoadedMeetups(DUMMY_MEETUPS);
     }, [])
 
@@ -30,9 +29,5 @@ function HomePage() {
         <MeetupList meetups={loadedMeetups} /> 
     ); 
 }
-
-// const async getStaticProps = () => {
-
-// }
 
 export default HomePage;
